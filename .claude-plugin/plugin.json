@@ -1,7 +1,8 @@
 {
   "name": "flask",
-  "description": "Flask (flask.do) - the feedback layer for video, built for the agentic loop. Your agent uploads a render and shares the link instantly; the reviewer hits record and talks through the video (voice, screen, drawing on frames) and Flask turns it into structured, timestamped comments with transcripts; the agent reads them and pushes revisions as versions of the same asset.",
-  "version": "1.1.1",
+  "displayName": "Flask",
+  "description": "Flask (flask.do): video review and feedback for agent-made media, not the Python web framework. Your agent uploads a render (video, animation, image) and shares the link at once; people review it with typed comments, drawings and voice, camera or screen recordings on the frame; the agent reads that feedback, makes the changes and uploads the next version of the same asset.",
+  "version": "1.2.0",
   "author": {
     "name": "Flask",
     "email": "hello@flask.do",
@@ -12,11 +13,22 @@
   "license": "MIT",
   "keywords": [
     "video",
+    "video-review",
     "feedback",
     "review",
-    "mcp",
+    "human-in-the-loop",
     "agentic-video",
+    "animation",
+    "motion-graphics",
     "remotion",
-    "video-editing"
-  ]
+    "hyperframes",
+    "versions",
+    "collaboration",
+    "mcp"
+  ],
+  "icon": "./icon.png",
+  "documentationUrl": "https://flask.do/mcp",
+  "supportUrl": "https://flask.do/mcp#support",
+  "privacyPolicyUrl": "https://flask.do/privacy-policy",
+  "termsOfServiceUrl": "https://flask.do/terms-of-service"
 }
