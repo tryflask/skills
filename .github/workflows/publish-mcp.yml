@@ -1,0 +1,32 @@
+# Publishes server.json to the official MCP Registry as io.github.tryflask/flask.
+# GitHub OIDC proves the run belongs to the tryflask organization, so no personal
+# token or secret is involved. Runs when server.json changes on main (raise its
+# "version" first: the registry refuses a version it already has) or by hand.
+name: Publish to MCP Registry
+
+on:
+  push:
+    branches: [main]
+    paths: [server.json]
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write # OIDC sign-in to the registry
+      contents: read
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Install mcp-publisher
+        run: |
+          curl -L "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_$(uname -s | tr '[:upper:]' '[:lower:]')_$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/').tar.gz" | tar xz mcp-publisher
+
+      - name: Authenticate to MCP Registry
+        run: ./mcp-publisher login github-oidc
+
+      - name: Publish server to MCP Registry
+        run: ./mcp-publisher publish
