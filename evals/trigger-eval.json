@@ -1,0 +1,82 @@
+[
+ {
+  "query": "i just rendered the launch teaser with remotion (out/teaser-v3.mp4), can you get it in front of maya so she can leave notes on the timing? she's not technical",
+  "should_trigger": true
+ },
+ {
+  "query": "make a 15s hyperframes intro for our podcast, logo reveal + title card, then put it somewhere i can comment on it from my phone, I'm heading out for the afternoon",
+  "should_trigger": true
+ },
+ {
+  "query": "the client left notes on https://flask.do/a/Xk3pQ about the color grade, go through them and fix the export",
+  "should_trigger": true
+ },
+ {
+  "query": "ok the explainer animation is done-ish (comp/explainer/index.html renders to explainer.mp4). before we ship it I want the team to review it and leave timestamped feedback. what's the best way to do that",
+  "should_trigger": true
+ },
+ {
+  "query": "render the onboarding motion graphic again with the slower easing we talked about and put it up as the next version so jonas sees it on the same link as before",
+  "should_trigger": true
+ },
+ {
+  "query": "I'm generating six product shot variants with the image model for the landing page hero. my cofounder needs to pick one and comment on the others, how do we run that",
+  "should_trigger": true
+ },
+ {
+  "query": "cut the 40 min interview in footage/raw.mp4 down to a 3 min highlight with ffmpeg and then get my editor's feedback on it, he's in LA and I'm in Berlin so it has to be async",
+  "should_trigger": true
+ },
+ {
+  "query": "Use Flask to collect feedback on the new trailer cut in exports/trailer_v7.mp4",
+  "should_trigger": true
+ },
+ {
+  "query": "we keep losing feedback in slack threads ('at like 1:20 the music is too loud', 'which version??'). I'm making these ad videos with claude every day now, there has to be a better loop for this",
+  "should_trigger": true
+ },
+ {
+  "query": "blender render of the product spin is at renders/spin_0420.mp4. upload it for review and wait for my notes, I'll look at it on my ipad tonight",
+  "should_trigger": true
+ },
+ {
+  "query": "add a /health route to my flask app that returns the current git sha as json",
+  "should_trigger": false
+ },
+ {
+  "query": "my flask server throws a 413 when users upload large videos, how do I raise MAX_CONTENT_LENGTH safely",
+  "should_trigger": false
+ },
+ {
+  "query": "review this PR for the video player component, the seek bar jumps back a second on safari after scrubbing",
+  "should_trigger": false
+ },
+ {
+  "query": "convert recording.mov to mp4 (h264, keep the audio), it's just for my own archive",
+  "should_trigger": false
+ },
+ {
+  "query": "write me a youtube script about why Linear feels so well designed, about 10 minutes, conversational",
+  "should_trigger": false
+ },
+ {
+  "query": "we do all client reviews in frame.io. export the final cut as prores 422 HQ so I can upload it there",
+  "should_trigger": false
+ },
+ {
+  "query": "give me honest feedback on this paragraph from my essay about remote work, is the argument clear?",
+  "should_trigger": false
+ },
+ {
+  "query": "grab a frame from demo.mp4 at 00:12 and save it as thumbnail.png for the blog post",
+  "should_trigger": false
+ },
+ {
+  "query": "compress demo.gif under 5MB so it embeds in our README without github complaining",
+  "should_trigger": false
+ },
+ {
+  "query": "pull the comments from my last youtube video and tell me what people liked and what they hated",
+  "should_trigger": false
+ }
+]
