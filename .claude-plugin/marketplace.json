@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "flask",
-      "source": "./",
+      "source": "./plugins/flask",
       "description": "Video review for agent-made media on Flask (flask.do): upload a render, share the link, read time-coded feedback and recordings, upload the next version."
     }
   ]

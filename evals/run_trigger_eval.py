@@ -29,7 +29,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-SKILL = HERE.parent / "skills" / "flask-review" / "SKILL.md"
+SKILL = HERE.parent / "plugins" / "flask" / "skills" / "flask-review" / "SKILL.md"
 BLOCKED = ["Bash", "Edit", "Write", "NotebookEdit", "WebFetch", "WebSearch", "Agent"]
 
 
