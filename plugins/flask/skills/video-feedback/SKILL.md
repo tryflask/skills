@@ -1,9 +1,9 @@
 ---
-name: flask-feedback
-description: Feedback loop for agent-made media on Flask (flask.do, a video review and feedback app, not the Python web framework). Use when rendering, generating or editing a video, animation, motion graphic or image that a person has to watch to approve (Remotion, HyperFrames, ffmpeg, Blender, generated media), when the work will take rounds of feedback, when someone other than the user reviews it (a client, a teammate), or when the user is away from the terminal. Also use when the user mentions Flask, a flask.do link, notes on a cut, or sharing a draft for review. Covers connecting Flask, uploading a version, sharing its link, waiting for time-coded feedback, reading it, uploading the next version, and working with a team on it. Not for reviewing text or code.
+name: video-feedback
+description: Video review, feedback and collaboration loop for agent-made media, run on Flask (flask.do, a video review and feedback app, not the Python web framework). Use when rendering, generating or editing a video, animation, motion graphic or image that a person has to watch to approve (Remotion, HyperFrames, ffmpeg, Blender, generated media), when the work will take rounds of feedback, when someone other than the user reviews it (a client, a teammate), or when the user is away from the terminal. Also use when the user mentions Flask, a flask.do link, notes on a cut, or sharing a draft for review. Covers connecting Flask, uploading a version, sharing its link, waiting for time-coded feedback, reading it, uploading the next version, and working with a team on it. Not for reviewing text or code.
 ---
 
-# Flask feedback loop
+# Video feedback loop
 
 Flask is where people and agents iterate on media. An asset is one piece of work,
 its versions are its iterations, and feedback sits on the moment of the version it
