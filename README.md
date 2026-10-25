@@ -12,6 +12,13 @@ the frames it points at, makes the changes and uploads the next version of the s
 asset. One link always shows the latest cut, with every earlier version and its
 notes behind it.
 
+Every version carries the code and context that made it. When your agent uploads a
+version it makes by code (a HyperFrames or Remotion project, an ffmpeg script,
+generated media), it saves the working files with it (`source.zip`) and notes on
+what changed and how to continue. Anyone on the team, person or agent, can open the
+link and pick the work up from there: no handover, no digging through someone's
+laptop.
+
 It works with whatever makes the video: HyperFrames, Remotion, moviepy, ffmpeg, or
 an export from Premiere, DaVinci Resolve or Final Cut Pro. Flask is the review side.
 
