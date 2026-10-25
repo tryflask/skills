@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Trigger eval for the flask-review skill: does Claude open the skill for a request?
+"""Trigger eval for the flask-feedback skill: does Claude open the skill for a request?
 
 For each query in trigger-eval.json, and each run, a fresh folder gets the skill as a
 project skill under a unique name, and `claude -p` answers the query there. A run
@@ -29,7 +29,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-SKILL = HERE.parent / "plugins" / "flask" / "skills" / "flask-review" / "SKILL.md"
+SKILL = HERE.parent / "plugins" / "flask" / "skills" / "flask-feedback" / "SKILL.md"
 BLOCKED = ["Bash", "Edit", "Write", "NotebookEdit", "WebFetch", "WebSearch", "Agent"]
 
 
@@ -40,7 +40,7 @@ def skill_parts(text):
     return desc, body
 
 
-def one_run(query, description, body, timeout, model, prefix="flask-review"):
+def one_run(query, description, body, timeout, model, prefix="flask-feedback"):
     name = f"{prefix}-{uuid.uuid4().hex[:8]}"
     root = Path(tempfile.mkdtemp(prefix="flask-trigger-"))
     try:
@@ -87,7 +87,7 @@ def main():
     ap.add_argument("--workers", type=int, default=6)
     ap.add_argument("--timeout", type=int, default=45)
     ap.add_argument("--model")
-    ap.add_argument("--name", default="flask-review", help="skill name to test (a unique suffix is added)")
+    ap.add_argument("--name", default="flask-feedback", help="skill name to test (a unique suffix is added)")
     ap.add_argument("--out")
     a = ap.parse_args()
     desc, body = skill_parts(SKILL.read_text())

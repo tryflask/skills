@@ -1,4 +1,4 @@
-# Trigger eval for flask-review
+# Trigger eval for flask-feedback
 
 `trigger-eval.json` holds 20 realistic requests in the format of Anthropic's
 `skill-creator` (`{"query", "should_trigger"}`):
