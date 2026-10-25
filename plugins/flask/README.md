@@ -1,7 +1,8 @@
-# flask-feedback
+# video-feedback
 
 Video review and collaboration for you, your team and your agents: a skill for
-Claude Code, Codex, Cursor and any agent that edits or makes video.
+Claude Code, Codex, Cursor and any agent that edits or makes video. It runs on
+[Flask](https://flask.do), so you need a Flask account (free plan below).
 
 [Flask](https://flask.do) is where a video gets reviewed. Your agent uploads what it
 makes (a cut, a render, an animation, a motion graphic, an image) and gives you the
@@ -25,7 +26,7 @@ an export from Premiere, DaVinci Resolve or Final Cut Pro. Flask is the review s
 (Flask here is flask.do, the review app. It is unrelated to the Flask Python web
 framework.)
 
-The skill, `flask-feedback`, says when a piece of work belongs in Flask, runs the
+The skill, `video-feedback`, says when a piece of work belongs in Flask, runs the
 feedback loop on it, and covers how it runs with a team. It ships with the
 connection to the [Flask MCP server](https://flask.do/mcp). How to work in Flask
 (the upload steps, versions, feedback, files and notes) comes from the server
