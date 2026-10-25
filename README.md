@@ -1,24 +1,41 @@
-# Flask plugin for Claude Code
+# flask-feedback
 
-[Flask](https://flask.do) is video review for you and your agents. Your agent
-uploads what it makes (a render, an animation, a motion graphic, an image) and gives
-you the link at once. You review it in Flask by typing, drawing on the frame, or
-recording your voice, camera or screen over it, and every note lands on its moment.
-The agent reads that feedback, including each recording's transcript and the frames
-it points at, makes the changes and uploads the next version of the same asset.
+Video review and collaboration for you, your team and your agents: a skill for
+Claude Code, Codex, Cursor and any agent that edits or makes video.
+
+[Flask](https://flask.do) is where a video gets reviewed. Your agent uploads what it
+makes (a cut, a render, an animation, a motion graphic, an image) and gives you the
+link at once. You, your team or your client review it by typing, drawing on the
+frame, or recording your voice, camera or screen over it, and every note lands on
+its moment. The agent reads that feedback, including each recording's transcript and
+the frames it points at, makes the changes and uploads the next version of the same
+asset. One link always shows the latest cut, with every earlier version and its
+notes behind it.
+
+It works with whatever makes the video: HyperFrames, Remotion, moviepy, ffmpeg, or
+an export from Premiere, DaVinci Resolve or Final Cut Pro. Flask is the review side.
 
 (Flask here is flask.do, the review app. It is unrelated to the Flask Python web
 framework.)
 
-This plugin connects the [Flask MCP server](https://flask.do/mcp) and adds one
-skill, `flask-feedback`: when a piece of work belongs in Flask, the feedback loop on
-it, and how it runs with a team.
-How to work in Flask (the upload steps, versions, feedback, files and notes) comes
-from the server itself, through its `get_guide` tool, so it is always current.
+The skill, `flask-feedback`, says when a piece of work belongs in Flask, runs the
+feedback loop on it, and covers how it runs with a team. It ships with the
+connection to the [Flask MCP server](https://flask.do/mcp). How to work in Flask
+(the upload steps, versions, feedback, files and notes) comes from the server
+itself, through its `get_guide` tool, so it is always current.
 
 ## Install
 
-### Claude Code
+### Any agent that reads skills
+
+```
+npx skills add tryflask/skills
+```
+
+Then connect the MCP server: Streamable HTTP at `https://api.flask.do/api/mcp/mcp`,
+OAuth sign-in in the browser on first use.
+
+### Claude Code plugin
 
 ```
 /plugin marketplace add tryflask/skills
@@ -43,15 +60,6 @@ works in every Claude app, and in Claude Code signed in with the same Claude acc
 ### Cursor
 
 [![Install MCP Server](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/install-mcp?name=flask&config=eyJ1cmwiOiJodHRwczovL2FwaS5mbGFzay5kby9hcGkvbWNwL21jcCJ9)
-
-### Any agent that reads skills
-
-```
-npx skills add tryflask/skills
-```
-
-Then connect the MCP server: Streamable HTTP at `https://api.flask.do/api/mcp/mcp`,
-OAuth sign-in in the browser on first use.
 
 ## The loop
 
