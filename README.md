@@ -37,7 +37,7 @@ itself, through its `get_guide` tool, so it is always current.
 ### Any agent that reads skills
 
 ```
-npx skills add tryflask/skills
+npx skills add tryflask/video-feedback-collaboration
 ```
 
 Then connect the MCP server: Streamable HTTP at `https://api.flask.do/api/mcp/mcp`,
@@ -46,7 +46,7 @@ OAuth sign-in in the browser on first use.
 ### Claude Code plugin
 
 ```
-/plugin marketplace add tryflask/skills
+/plugin marketplace add tryflask/video-feedback-collaboration
 /plugin install flask@flask
 ```
 
