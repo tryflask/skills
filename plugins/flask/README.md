@@ -4,7 +4,7 @@ Video review and collaboration for you, your team and your agents: a skill for
 Claude Code, Codex, Cursor and any agent that edits or makes video. It runs on
 [Flask](https://flask.do), so you need a Flask account (free plan below).
 
-[Flask](https://flask.do) is where a video gets reviewed. Your agent uploads what it
+Flask is where a video gets reviewed. Your agent uploads what it
 makes (a cut, a render, an animation, a motion graphic, an image) and gives you the
 link at once. You, your team or your client review it by typing, drawing on the
 frame, or recording your voice, camera or screen over it, and every note lands on
