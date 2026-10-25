@@ -12,7 +12,7 @@
     {
       "name": "flask",
       "source": "./plugins/flask",
-      "description": "Video review for agent-made media on Flask (flask.do): upload a render, share the link, read time-coded feedback and recordings, upload the next version."
+      "description": "Video review for agent-made media on Flask (flask.do): upload a render, share the link, read time-coded feedback and recordings, upload the next version, alone or with a team."
     }
   ]
 }

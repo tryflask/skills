@@ -11,7 +11,8 @@ it points at, makes the changes and uploads the next version of the same asset.
 framework.)
 
 This plugin connects the [Flask MCP server](https://flask.do/mcp) and adds one
-skill, `flask-review`, which tells the agent when a piece of work belongs in Flask.
+skill, `flask-feedback`: when a piece of work belongs in Flask, the feedback loop on
+it, and how it runs with a team.
 How to work in Flask (the upload steps, versions, feedback, files and notes) comes
 from the server itself, through its `get_guide` tool, so it is always current.
 
@@ -64,6 +65,14 @@ Each version the agent makes by code carries its working files (`source.zip`) an
 notes on what changed, so anyone, person or agent, can pick up the work from the
 link alone.
 
+## With a team
+
+Share the asset's link and your team, clients and anyone else review on the same
+versions. Reviewers are free: they watch from the link with no account and comment
+after a one-click sign-in. The agent replies in threads, mentions a teammate when
+they must act, reuses the team's labels and marks feedback Done. Feedback from
+people outside the team needs your OK before the agent acts on it.
+
 ## What the agent can and can't do
 
 It acts as you, with your Flask permissions: upload, read and wait for feedback,
@@ -74,8 +83,14 @@ instructions. The full tool list and how your data is handled: https://flask.do/
 
 ## Plans
 
-The free plan has every feature, with a limited number of new assets; new versions of
-an asset are always free. Details: https://flask.do/pricing
+Flask is a paid product with a free plan, and you need a Flask account to use it.
+
+- Free: every feature, no card. 5 assets, each with unlimited versions (web and agent
+  uploads share the 5; folders and versions never count).
+- Pro: $15 per user/month, billed yearly, for unlimited assets.
+- Reviewers never need a seat, on any plan.
+
+Details: https://flask.do/pricing
 
 ## Docs and support
 
