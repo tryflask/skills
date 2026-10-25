@@ -3,10 +3,10 @@
   "name": "io.github.tryflask/flask",
   "description": "Video review for agents: upload renders, read time-coded feedback, iterate version by version.",
   "repository": {
-    "url": "https://github.com/tryflask/skills",
+    "url": "https://github.com/tryflask/video-feedback",
     "source": "github"
   },
-  "version": "1.2.0",
+  "version": "1.4.1",
   "websiteUrl": "https://flask.do/mcp",
   "remotes": [
     {
